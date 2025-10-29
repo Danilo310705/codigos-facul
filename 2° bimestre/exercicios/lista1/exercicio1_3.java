@@ -22,5 +22,4 @@ class exercicio1_3 {
         }
         return numero;
     }
-
 }
