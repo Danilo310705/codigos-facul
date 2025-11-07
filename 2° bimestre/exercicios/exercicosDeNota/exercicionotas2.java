@@ -9,8 +9,7 @@ public class exercicionotas2 {
         //O aluno que tiver 20 ou menos, esta aprovado.
 
         int notas_alunos[][] = new int[5][2];
-        
-        //preenchendo matriz
+            //preenchendo matriz
         for (int i = 0; i < notas_alunos.length; i++) {
             for (int j = 0; j < notas_alunos[i].length; j++) {
                 System.out.print("["+ i + "]" + "[" + j + "]: ");
@@ -22,18 +21,13 @@ public class exercicionotas2 {
         // imprimindo matriz
         for (int i = 0; i < notas_alunos.length; i++) {
             for (int j = 0; j < notas_alunos[i].length; j++) {
-                if( notas_alunos[i][1] <= 20){
-                System.out.print( notas_alunos[i][j] + " Reprovado por faltas ");
+                if( j == 1 && notas_alunos[i][j] > 20){
+                    System.out.print( notas_alunos[i][j] + " Reprovado por faltas ");
                 } else {
-                    System.out.print( notas_alunos[i][j] + "");
+                    System.out.print( notas_alunos[i][j] + " ");
                 }
             }
             System.out.println();
         }
-
-    }
-    public static double pedir_numero_double() {
-        System.out.print("informe a precos: ");
-        return s.nextDouble();
     }
 }
