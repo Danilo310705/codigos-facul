@@ -78,6 +78,8 @@ public class listaexercicionota1 {
             for (int j = 0; j < notas_alunos[i].length; j++) {
                 if( j == 1 && notas_alunos[i][j] > 20){
                 System.out.print( notas_alunos[i][j] + " Reprovado por faltas ");
+                } else if ( j == 1) {
+                    System.out.print( notas_alunos[i][j] + " Aprovado ");
                 } else {
                     System.out.print( notas_alunos[i][j] + " ");
                 }
